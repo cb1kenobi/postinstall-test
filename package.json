@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "node postinstall.js || node -e true"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
