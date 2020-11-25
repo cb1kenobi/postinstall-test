@@ -30,7 +30,7 @@ Tested with Node.js 14.15.0.
 
 #### Root User (root)
 
-| sudo | Flags       | gid        | egid       | SUDO_GID   | uid          | euid         | SUDO_UID    |
+| sudo | Unsafe Perm | gid        | egid       | SUDO_GID   | uid          | euid         | SUDO_UID    |
 | :--: | :---------: | ---------- | ---------- | ---------- | ------------ | ------------ | ----------- |
 |  No  |             | 0 (wheel)  | 0 (wheel)  | n/a        | prefix owner | prefix owner | n/a         |
 |  No  |     Yes     | 0 (wheel)  | 0 (wheel)  | n/a        | 0 (root)     | 0 (root)     | n/a         |
@@ -41,7 +41,7 @@ Tested with Node.js 14.15.0.
 
 #### Normal User (chris)
 
-| sudo | Flags       | gid        | egid       | SUDO_GID   | uid                 | euid                | SUDO_UID    |
+| sudo | Unsafe Perm | gid        | egid       | SUDO_GID   | uid                 | euid                | SUDO_UID    |
 | :--: | :---------: | ---------- | ---------- | ---------- | ------------------- | ------------------- | ----------- |
 |  No  |             | 20 (staff) | 20 (staff) | n/a        | 501 (chris)         | 501 (chris)         | n/a         |
 |  No  |     Yes     | 20 (staff) | 20 (staff) | n/a        | 501 (chris)         | 501 (chris)         | n/a         |
@@ -50,7 +50,7 @@ Tested with Node.js 14.15.0.
 
 #### Root User (root)
 
-| sudo | Flags       | gid        | egid       | SUDO_GID   | uid                 | euid                | SUDO_UID    |
+| sudo | Unsafe Perm | gid        | egid       | SUDO_GID   | uid                 | euid                | SUDO_UID    |
 | :--: | :---------: | ---------- | ---------- | ---------- | ------------------- | ------------------- | ----------- |
 |  No  |             | 0 (wheel)  | 0 (wheel)  | n/a        | 4294967294 (nobody) | 4294967294 (nobody) | n/a         |
 |  No  |     Yes     | 0 (wheel)  | 0 (wheel)  | n/a        | 0 (root)            | 0 (root)            | n/a         |
